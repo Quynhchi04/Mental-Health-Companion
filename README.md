@@ -5,7 +5,7 @@ This repository contains annotated training data for the Mental Health Companion
 ---
 
 ## 📁 Repository Structure
-
+```
 Mental-Health-Companion/
 │
 ├── data/
@@ -29,7 +29,7 @@ Mental-Health-Companion/
 │ └── annotation_guidelines.md # Instructions for labeling intents, entities, etc.
 │
 └── README.md # This file
-
+```
 ---
 
 ## 🧾 Data Schema
