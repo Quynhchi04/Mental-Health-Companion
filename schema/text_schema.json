@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "input": { "type": "string" },
+    "response": { "type": "string" },
+    "intent": { "type": "string" },
+    "entities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "sentiment": { "type": "string", "enum": ["positive", "neutral", "negative"] }
+  },
+  "required": ["user_input", "bot_response", "intent"]
+}

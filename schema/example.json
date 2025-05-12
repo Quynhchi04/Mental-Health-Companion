@@ -1,0 +1,9 @@
+[
+  {
+    "user_input": "I feel anxious lately",
+    "bot_response": "I'm here to help. Can you tell me more about your anxiety?",
+    "intent": "anxiety",
+    "entities": ["anxiety"],
+    "sentiment": "negative"
+  }
+]
