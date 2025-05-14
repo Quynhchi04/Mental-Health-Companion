@@ -1,9 +1,12 @@
-[
-  {
-    "user_input": "I feel anxious lately",
-    "bot_response": "I'm here to help. Can you tell me more about your anxiety?",
-    "intent": "anxiety",
-    "entities": ["anxiety"],
-    "sentiment": "negative"
+{
+  "input": "What should I do about chest pain after exercise?",
+  "response": "If the pain persists or worsens, seek medical attention immediately.",
+  "intent": "report_symptom",
+  "entities": ["chest pain", "exercise"],
+  "sentiment": "negative",
+  "meta": {
+    "age": 45,
+    "gender": "male",
+    "timestamp": "2025-05-14T10:20:00Z"
   }
-]
+}

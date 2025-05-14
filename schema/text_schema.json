@@ -8,7 +8,15 @@
       "type": "array",
       "items": { "type": "string" }
     },
-    "sentiment": { "type": "string", "enum": ["positive", "neutral", "negative"] }
+    "sentiment": { "type": "string", "enum": ["positive", "neutral", "negative"] },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "age": { "type": "integer" },
+        "gender": { "type": "string", "enum": ["male", "female", "other"] },
+        "timestamp": { "type": "string", "format": "date-time" }
+      }
+    }
   },
-  "required": ["user_input", "bot_response", "intent"]
+  "required": ["input", "response", "intent"]
 }

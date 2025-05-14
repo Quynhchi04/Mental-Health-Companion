@@ -25,8 +25,7 @@ Mental-Health-Companion/
 ├── scripts/ # Python scripts (e.g., for preprocessing)
 │ └── ...
 |
-├── annotation/
-│ └── annotation_guidelines.md # Instructions for labeling intents, entities, etc.
+├── annotation_guidelines.md # Instructions for labeling intents, entities, etc.
 │
 └── README.md # This file
 ```
@@ -43,6 +42,7 @@ Each data entry follows this schema:
 | intent        | string   | Purpose of the message (e.g., report_symptom, ask_info) |
 | entities      | list     | Extracted keywords/phrases (e.g., ["anxiety"]) |
 | sentiment     | string   | Detected sentiment: positive, neutral, negative |
+| meta          | object   | Additional metadata (e.g., age, gender, timestamp) |
 
 ---
 
@@ -52,6 +52,7 @@ Each data entry follows this schema:
   - **Intent**: What is the user trying to do or express?
   - **Entities**: Key terms such as symptoms or conditions.
   - **Sentiment**: Emotional tone of the message.
+  - **Meta Data**: Optional fields such as age, gender, and timestamp to enhance context.
 - All annotations follow the [Annotation Guidelines](annotation/annotation_guidelines.md).
 
 ---
@@ -65,5 +66,9 @@ Each data entry follows this schema:
   "intent": "report_symptom",
   "entities": ["sleep"],
   "sentiment": "negative",
-  "timestamp": null
+  "meta": {
+    "age": 23,
+    "gender": "male",
+    "timestamp": null
+  }
 }

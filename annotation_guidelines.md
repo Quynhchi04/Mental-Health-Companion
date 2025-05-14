@@ -20,7 +20,7 @@ Each annotated message must follow this format:
 | `intent`     | string  | The purpose behind the user’s message                        |
 | `entities`   | list    | Keywords or phrases related to symptoms, conditions, etc.    |
 | `sentiment`  | string  | Detected emotion: `positive`, `neutral`, or `negative`       |
-
+| `meta`       | object  | Additional metadata, such as age, gender, and timestamp                           |
 ---
 
 ## 🎯 Intent Annotation
